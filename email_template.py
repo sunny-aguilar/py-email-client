@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
-#   This script interacts with an API in order to upload client reviews on
-#   the client's website. API is implemented using Django.
+#   This script implements a simple email client to prepare an email for
+#   sending.
 #
 #
 #   Author:     Sandro Aguilar
