@@ -12,3 +12,5 @@ from email.mesage import EmailMessage
 message = EmailMessage
 print(message)
 
+sender = 'me@example.com'
+recipient = 'you@example.com'
