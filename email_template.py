@@ -48,4 +48,8 @@ with open(attachment_path, 'rb') as ap:
 
 
 # show message
-print(message)
+# print(message)
+
+
+# create a mail server
+mail_server = smtplib.SMTP('localhost')
