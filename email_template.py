@@ -8,7 +8,7 @@
 #   Author:     Sandro Aguilar
 #   Date:       May 16, 2020
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-import os.path, mimetypes
+import os.path, mimetypes, smtplib
 from email.message import EmailMessage
 
 message = EmailMessage()
