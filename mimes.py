@@ -9,7 +9,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 import os.path, mimetypes
 
-attachment_path = 'banana.gif'
+attachment_path = './banana.gif'
 attachment_filename = os.path.basename(attachment_path)
 
 mime_type, _ = mimetypes.guess_type(attachment_path)
