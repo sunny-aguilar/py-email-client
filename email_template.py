@@ -23,5 +23,6 @@ body = """Hey there!
 
     I'm learning to send emails using Python!"""
 
+message.set_content(body)
 
 print(message)
