@@ -26,8 +26,6 @@ body = """Hey there!
 
 message.set_content(body)
 
-print(message)
-
 
 # MIME data
 attachment_path = './banana.gif'
@@ -48,4 +46,5 @@ with open(attachment_path, 'rb') as ap:
     filename=os.path.basename(attachment_path))
 
 
-
+# show message
+print(message)
