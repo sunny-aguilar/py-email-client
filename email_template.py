@@ -7,6 +7,7 @@
 #   Author:     Sandro Aguilar
 #   Date:       May 16, 2020
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+import os.path, mimetypes
 from email.message import EmailMessage
 
 message = EmailMessage()
@@ -26,3 +27,16 @@ body = """Hey there!
 message.set_content(body)
 
 print(message)
+
+
+# MIME data
+attachment_path = './banana.gif'
+attachment_filename = os.path.basename(attachment_path)
+
+mime_type, _ = mimetypes.guess_type(attachment_path)
+print(mime_type)
+
+mime_type, mime_subtype = mime_type.split('/', 1)
+print(mime_type)
+print(mime_subtype)
+
