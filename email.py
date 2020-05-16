@@ -7,5 +7,8 @@
 #   Author:     Sandro Aguilar
 #   Date:       May 16, 2020
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+from email.mesage import EmailMessage
 
+message = EmailMessage
+print(message)
 
