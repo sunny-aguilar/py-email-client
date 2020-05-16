@@ -8,7 +8,7 @@
 #   Author:     Sandro Aguilar
 #   Date:       May 16, 2020
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-import os.path, mimetypes, smtplib
+import os.path, mimetypes, smtplib, getpass
 from email.message import EmailMessage
 
 message = EmailMessage()
@@ -52,4 +52,4 @@ with open(attachment_path, 'rb') as ap:
 
 
 # create a mail server
-mail_server = smtplib.SMTP('localhost')
+mail_server = smtplib.SMTP_SSL('smtp.gmail.com')
