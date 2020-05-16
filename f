@@ -32,14 +32,14 @@ elif [ "$1" == 'commit' ]; then
 
 elif [ "$1" == 'run' ]; then
     # run Python script
-    python3 email.py $2 $3
+    python3 email_template.py $2 $3
     exit 0
 
 elif [ "$1" == 'runs' ]; then
     # push
     push_commit
     # run Python script
-    python3 email.py $2 $3
+    python3 email_template.py $2 $3
     exit 0
 
 fi
