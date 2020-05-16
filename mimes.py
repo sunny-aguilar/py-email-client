@@ -18,3 +18,4 @@ print(mime_type)
 mime_type, mime_subtype = mime_type.split('/', 1)
 print(mime_type)
 print(mime_subtype)
+
