@@ -23,6 +23,11 @@ fruit = {
     "grapes": 13
 }
 
+table_data = []
+
+for k, v in fruit.items():
+    table_data.append([k, v])
+
 # report object
 report = SimpleDocTemplate('report.pdf')
 
@@ -31,6 +36,9 @@ styles = getSampleStyleSheet()
 
 # report title
 report_title = Paragraph('A Complete Inventory of My Fruit', styles['h1'])
+
+# report table data
+report_table = Table(data=table_data)
 
 # build report
 report.build([report_title])
